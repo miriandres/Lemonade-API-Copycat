@@ -9,6 +9,10 @@ Imitación de la web de [Lemonade-API](https://www.lemonade.com/api) como práct
 * [Github](https://github.com/miriandres)
 * [LinkedIn](www.linkedin.com/in/miriamandresdev)
 
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/86624207/153714005-e6ae2639-2e47-4a12-95ab-bfabf03382a6.gif" />
+</p>
+
 ## Live Site Url
 Puedes ver el proyecto en directo aquí [https://miriandres.github.io/Lemonade-API-Copycat/](https://miriandres.github.io/Lemonade-API-Copycat/)
 
