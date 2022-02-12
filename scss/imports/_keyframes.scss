@@ -1,0 +1,50 @@
+@keyframes clouds {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -100vw;
+  }
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.35;
+  }
+}
+
+@keyframes moon {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(25px) rotate(10deg);
+  }
+}
+
+@keyframes reverse-floating {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(25px) rotate(-10deg);
+  }
+}
+
+@keyframes typing {
+  to {
+    transform: scaleX(0);
+  }
+}

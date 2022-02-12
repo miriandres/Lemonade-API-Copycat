@@ -1,0 +1,28 @@
+/* Aquí definimos las Custom properties */
+:root{
+    --negro         : #393939;
+    --blanco        : #ffffff;
+    --gris-400      : #b7b7b7;
+    --gris-500      : #282828;
+    --borde-gris    : #4a4a4a;
+    
+    --main-bg       : #161930;
+    --main-400      : #92abdc;
+    --main-500      : #42508a;
+    --main-600      : #212540;
+    --accent        : #ff0083;
+    --accent-hover  : #DC0073;
+
+    /* Tipografía */
+    --ff-main  : 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    --ff-title : 'Merriweather', Georgia, serif;
+    --ff-type  : 'Courier New', Courier, monospace;
+
+    --fs-h1       : 3.4em;
+    --fs-title    : 2.85em;
+    --fs-subtitle : 1.2em;
+    --fs-h3       : 1.1em;
+    --fs-p        : 1.4em;
+    --fs-600      : 1.55em;
+    --fs-700      : 1.6em;
+}

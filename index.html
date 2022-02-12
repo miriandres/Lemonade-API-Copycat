@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemonade API | Miriandres</title>
+    <meta name="description" content="DC Shoes Copycat">
+    <meta name="author" content="Miriam Andrés">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@miriandresdev">
+    <meta name="twitter:title" content="Lemonade API Copycat | Miriandres">
+    <meta name="twitter:description" content="Lemonade API Copycat">
+    <meta name="twitter:creator" content="@miriandresdev">
+    <meta name="twitter:image:src" content="design/social-preview.jpg">
+    <meta property="og:title" content="Lemonade API Copycat | Miriandres" />
+    <meta property="og:url" content="https://miriandres.github.io/Lemonade-API-Copycat/" />
+    <meta property="og:image" content="design/social-preview.jpg" />
+    <meta property="og:description" content="Lemonade API Copycat" />
+    <meta property="og:site_name" content="Lemonade API Copycat | Miriandres" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/app.css">
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <button class="mobile__menu" type="button" aria-label="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mobile__icon" viewBox="0 0 16 16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+            </svg>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a href="#" class="header__a" aria-label="Homeowners" title="Homeowners">Homeowners</a></li>
+                <li class="header__li"><a href="#" class="header__a" aria-label="Renters" title="Renters">Renters</a></li>
+                <li class="header__li"><a href="#" class="header__a" aria-label="Pet" title="Pet">Pet</a></li>
+                <li class="header__li"><a href="#" class="header__a" aria-label="Life" title="Life">Life</a></li>
+                <li class="header__li"><a href="#" class="header__a" aria-label="Giveback" title="Giveback">Giveback</a></li>
+                <li class="header__li header__li--mobile"><a href="#" class="header__a" aria-label="My Account" title="My Account">My Account</a></li>
+                <li>
+                    <button class="mobile__close" type="button" aria-label="Close">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                        </svg>
+                    </button>
+                </li>
+                <ul class="header__rrss">
+                    <li>
+                        <a href="#" title="Facebook" aria-label="Facebook" class="header__item">
+                            <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">    
+                            <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Instagram" aria-label="Instagram" class="header__item">
+                            <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Twitter" aria-label="Twitter" class="header__item">
+                            <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+
+        <a href="#" title="Lemonade" class="header__logo">
+            <img loading="lazy" src="assets/logo-white-ed190d371218981cb8b956b7c97211d4b14f4721b8fbffc8ea3d084b04fed3e1.svg" alt="Logo Lemonade">
+        </a>
+        <div class="header__right">
+            <span class="header__login">Login</span>
+            <button class="header__btn btn" type="button">Request access</button>
+            <button class="header__btn header__btn--mobile btn" type="button">Access</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="clouds"></div>
+            <div class="wrapper">
+                <h1 class="hero__h1">Introducing the Lemonade API</h1>
+                <p class="section__subtitle">A quick and easy way for your users to protect their homes and stuff!</p>
+                <button class="btn" type="button">Request access</button>
+                <img src="assets/light.png" alt="Luz de fondo" class="hero__light" loading="lazy">
+                <img src="assets/bg-moon.png" alt="Luna" class="hero__moon" loading="lazy">
+                <div class="hero__bg">
+                    <img src="assets/skyline.png" alt="Skyline" class="hero__skyline" loading="lazy">
+                </div>
+            </div>
+        </section>
+        <section class="section integration">
+            <div class="wrapper">
+                <h2 class="section__title">Seamless Integration, Huge Value</h2>
+                <p class="section__subtitle">Lemonade insurance can be integrated beautifully into any app or website</p>
+
+                <div class="integration__bg">
+                    <div class="integration__wrapper">
+                        <img src="assets/simulation-container.png" alt="phone" loading="lazy" decoding="async">
+                        <video class="integration__video" poster="assets/simulation-poster.png" preload="auto" playsinline loop autoplay muted loading="lazy">
+                            <source src="assets/simulation_low.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section usage">
+            <div class="wrapper">
+            <div class="usage__col">
+                <article class="usage__article">
+                    <h3 class="usage__h3">Commerce</h3>
+                    <p class="usage__p">Let customers protect the stuff they buy on your site</p>
+                </article>
+                <article class="usage__article">
+                    <h3 class="usage__h3">Real Estate Marketplaces</h3>
+                    <p class="usage__p">Renters and homeowners insurance for your residents in just a few clicks</p>
+                </article>
+                <article class="usage__article">
+                    <h3 class="usage__h3">Financial Services</h3>
+                    <p class="usage__p">Help your users improve their financial stability with proper coverage</p>
+                </article>
+                <article class="usage__article">
+                    <h3 class="usage__h3">Smart Home Security</h3>
+                    <p class="usage__p">Offer full protection with discounts and total peace of mind</p>
+                </article>
+                <article class="usage__article">
+                    <h3 class="usage__h3">Insurance As A Service</h3>
+                    <p class="usage__p">Brokers, get your users insured in seconds, this time with no paperwork</p>
+                </article>
+                <article class="usage__article">
+                    <h3 class="usage__h3">Everything Else</h3>
+                    <p class="usage__p">We're open to ideas! Let us know how Lemonade can be integrated in your app</p>
+                </article>
+            </div>
+
+            </div>
+        </section>
+        <section class="section coverage">
+            <div class="clouds"></div>
+            <div class="wrapper">
+                <h2 class="section__title">The Ultimate Coverage</h2>
+                <p class="section__subtitle">Lemonade covers stuff and property, with special protection for camera equipment, jewelry, bikes, fine art, and musical instruments</p>
+            </div>
+            <div class="coverage__bg">
+                <img class="coverage__bike" src="assets/bicycle-coverage.png" loading="lazy" alt="Bicycle">
+                <img class="coverage__jewelry" src="assets/jewelry-coverage.png" loading="lazy" alt="Jewelry">
+                <img class="coverage__tv" src="assets/electronics-coverage.png" loading="lazy" alt="TV">
+                <img class="coverage__musical" src="assets/musical-coverage.png" loading="lazy" alt="Saxophone">
+            </div>
+        </section>
+        <section class="section options">
+            <div class="wrapper">
+                <h2 class="section__title">How it Works</h2>
+                <p class="section__subtitle">We offer different options for integration, with various levels of customization.<br>Choose what's right for your app!</p>
+
+                <div class="options__row">
+                    <div class="options__img rest">
+                        <img class="options__card" src="assets/rest-api-sample.png" alt="Rest API card">
+                        <div class="rest__checkbox">
+                            <label for="check" class="rest__label">
+                                <input id="check" type="checkbox" class="rest__check">
+                                <span class="rest__checkmark"></span>
+                            </label>
+                            <div class="rest__text">
+                                <h5 class="rest__h5">Add renters insurance for $5/mo</h5>
+                                <p class="rest__p">Powered by&nbsp;<img class="rest__logo" src="assets/logo-sml.png" loading="lazy" alt="Lemonade logo"></p>
+                            </div>
+                        </div>
+                        <div class="options__code code">
+                            <p>CREATE <span>quote</span> </p>
+                            <p class="code__indent ">type: "<span>renter</span>",</p>
+                            <p class="code__indent ">address: "<span>123 Main Street, NY</span>",</p>
+                            <p class="code__indent ">name: "<span>John Doe</span>",</p>
+                            <p class="code__indent ">email: "<span>johndoe@gmail.com</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                    <article class="options__article">
+                        <h3 class="options__h3">REST API</h3>
+                        <div class="options__subtitle">
+                            <span class="options__span">Fully customizable option</span>
+                        </div>
+                        <p class="options__p">Full control over how information is collected from your users. Let your users get quotes, add items, and even pay, all from within your app.</p>
+                    </article>
+                </div>
+                <div class="options__row options__row--reversed">
+                    <div class="options__img widget">
+                        <img class="options__card" src="assets/widget-sample.png" alt="Widget card">
+                        <img class="widget__arrow" src="assets/widget-sample-arrow.png" alt="arrow">
+                        <div class="widget__input">
+                            <button class="widget__btn btn">Add insurance</button>
+                        </div>
+                        <div class="widget__popup popup">
+                            <img class="popup__img" src="assets/Maya.jpg" alt="Popup icon">
+                            <p class="popup__p">I'm Maya. Let's get you awesome coverage for your bike. What's your name?</p>
+                            <p class="popup__form">Full name</p>
+                            <button class="popup__btn">Let's do it</button>
+                        </div>
+                        <div class="options__code code">
+                            <p>CREATE <span>quote</span> {</p>
+                            <p class="code__indent">type: "<span>renter</span>",</p>
+                            <p class="code__indent">address: "<span>123 Main Street, NY</span>",</p>
+                            <p class="code__indent">name: "<span>John Doe</span>",</p>
+                            <p class="code__indent">email: "<span>johndoe@gmail.com</span>"</p>
+                            <p class="code__indent">items:</p>
+                            <p class="code__indent code__indent--doble"> bike: "<span>3900</span>"</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                    <article class="options__article">
+                        <h3 class="options__h3">Widget</h3>
+                        <div class="options__subtitle">
+                            <span class="options__span options__span--time">2 minute integration</span>
+                        </div>
+                        <p class="options__p">Maya, our AI bot, will help your users get insured in seconds. Get Lemonade up and running with a single line of code.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="wrapper">
+                <h2 class="section__title">Apply for Access</h2>
+                <p class="section__subtitle">Join others who are already using Lemonade's API to build amazing new products. We can't wait to see what you'll build with it.</p>
+                <button class="btn" type="button">Request access</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__sup">
+                <div class="footer__logo"></div>
+                <div class="footer__col">
+                    <h4 class="footer__h4">Features</h4>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#" class="footer__a" title="Homeowners">Homeowners</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Renters">Renters</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Pet Health">Pet Health</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Term Life">Term Life</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Claims">Claims</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Giveback">Giveback</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Policy 2.0">Policy 2.0</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="API">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__h4">Resources</h4>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#" class="footer__a" title="Blog">Blog</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="FAQ">FAQ</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Community">Community</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Transparency">Transparency</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Where We're Live">Where We're Live</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Insurance Dictionary">Insurance Dictionary</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Investor Relations">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__h4">Company</h4>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#" class="footer__a" title="Join the Team">Join the Team</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Legal Stuff">Legal Stuff</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Privacy Pledge">Privacy Pledge</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Terms of Service">Terms of Service</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="API Terms &amp Condictions">API Terms &amp Condictions</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Accessibility">Accessibility</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Partners Program">Partners Program</a></li>
+                        <li class="footer__li"><a href="#" class="footer__a" title="Reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__subcol">
+                        <h4 class="footer__h4">Region</h4>
+                        <select class="footer__select" name="footer__select">
+                            <option value="us">🇺🇸 &nbsp; United States</option>
+                            <option value="fre">🇫🇷 &nbsp; France (English)</option>
+                            <option value="fr">🇫🇷 &nbsp; France (Français)</option>
+                            <option value="de">🇩🇪 &nbsp; Germany (Deutsch) </option>
+                            <option value="nle">🇳🇱 &nbsp; Netherlands (English)</option>
+                            <option value="dee">🇩🇪 &nbsp; Germany (English)</option>
+                            <option value="nld">🇳🇱 &nbsp; Netherlands (Dutch)</option>
+                        </select>
+                    </div>
+                    <div class="footer__subcol">
+                        <h4 class="footer__h4">Get our app</h4>
+                        <ul class="footer__row">
+                            <li><a href="#" class="footer__app footer__app--apple" title="App Store"></a></li>
+                            <li><a href="#" class="footer__app footer__app--google" title="Google Play"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__subcol">
+                        <h4 class="footer__h4">Follow us</h4>
+                        <ul class="footer__row rrss">
+                            <li class="rrss__li">
+                                <a href="#" title="Instagram" aria-label="Instagram" class="rrss__a">
+                                    <svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                  </svg>
+                                </a>
+                            </li>
+                            <li class="rrss__li">
+                                <a href="#" title="Facebook" aria-label="Facebook" class="rrss__a">
+                                    <svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">    
+                                    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="rrss__li">
+                                <a href="#" title="Twitter" aria-label="Twitter" class="rrss__a">
+                                    <svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="rrss__li">
+                                <a href="#" title="Youtube" aria-label="Youtube" class="rrss__a">
+                                    <svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="rrss__li">
+                                <a href="#" title="Medium" aria-label="Medium" class="rrss__a">
+                                    <svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                        <path d="M 3 6 L 7 11.091797 L 7 35.285156 L 1 43 L 15 43 L 9 35.285156 L 9 13.75 L 22 43 L 21.998047 43.013672 L 34 13.544922 L 34 39 L 30 43 L 47 43 L 43 39 L 42.972656 10.503906 L 46.863281 6.0136719 L 34.845703 6.0136719 L 25.605469 28.744141 L 15.496094 6 L 3 6 z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="rrss__li">
+                                <a href="#" title="Dribble" aria-label="Dribble" class="rrss__a">
+                                    <svg class="rrss__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright copyright">
+                <p class="copyright__p">
+                    Property and casualty insurance provided by Lemonade Insurance Company, 5 Crosby St. New York, NY 10013.
+                </p>
+                <p>
+                    Life Insurance provided by North American Company for Life and Health Insurance®, Administrative Office, One Sammons Plaza, Sioux Falls, SD 57193.
+                </p>
+                <p class="copyright__p">
+                    Lemonade Insurance Agency, LLC (LIA) is acting as the agent of Lemonade Insurance Company and Lemonade Life Insurance Agency, LLC (LLIA) is acting as the agent of North American Company for Life and Health Insurance®. Both LIA and LLIA receive compensation based on the premiums for the insurance policies each sells. Further information is available upon request.
+                </p>
+                <p class="copyright__p">
+                    LLIA is a sub-producer of Bestow Agency, LLC. Life insurance quotes are provided by Bestow Agency, LLC dba Bestow Insurance Services in CA, who is the licensed agent. Term Life insurance policies are issued on North American Company for Life and Health Insurance® policy form LS181 and LS182, or state version including all applicable endorsements and riders. Products or issue ages may not be available in all jurisdictions. Limitations or restrictions may apply. Not available in New York. Our application asks about your lifestyle and health; your answers allow us to save you time and avoid offline medical exams.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
