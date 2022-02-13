@@ -65,13 +65,13 @@ body.no-scroll{
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 70px;
     padding: 1.5em 1.5em;
     color: var(--blanco);
     background-color: var(--main-bg);
     border-bottom: 1px solid transparent;
     z-index: 1;
     @include flex( row, nowrap, space-between, center );
-    min-height: 70px;
     
     &__logo{
         position: absolute;
@@ -86,20 +86,13 @@ body.no-scroll{
             transform: scale(0.8);
         }
     }
-    &__nav{
-        position: relative;
-    }
-    &__ul{
-        gap: 1.5em;
-        @include flex( row, nowrap, flex-start, flex-start );
-
+    &__side{
         @include media(xl){
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             max-width: 280px;
-            flex-direction: column;
             height: 100%;
             padding: 2em 1.5em;
             background-color: var(--main-600);
@@ -107,8 +100,17 @@ body.no-scroll{
             transition: all 0.4s ease;
             z-index: 3;
         }
+
         &.activo{
             transform: translateX(0%);
+        }
+    }
+    &__ul{
+        gap: 1.5em;
+        @include flex( row, nowrap, flex-start, flex-start );
+
+        @include media(xl){
+            flex-direction: column;
         }
     }
     &__li{
