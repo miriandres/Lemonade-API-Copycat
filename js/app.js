@@ -1,17 +1,19 @@
 'use strict'
-const nav      = document.querySelector('.header__ul')
-const navBtn   = document.querySelector('.mobile__menu')
-const navClose = document.querySelector('.mobile__close')
+const body      = document.body
+const nav       = document.querySelector('.header__side')
+const navBtn    = document.querySelector('.mobile__menu')
+const navClose  = document.querySelector('.mobile__close')
+const headerBtn = document.querySelector('.header__btn')
 
 navBtn.addEventListener('click', ()=>{
     nav.classList.toggle('activo')
+    body.classList.add('no-scroll')
+
 })
 navClose.addEventListener('click', ()=>{
     nav.classList.toggle('activo')
+    body.classList.remove('no-scroll')
 })
-
-const body      = document.body
-const headerBtn = document.querySelector('.header__btn')
 
 const rest       = document.querySelector('.rest')
 const widget     = document.querySelector('.widget')
