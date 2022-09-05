@@ -5,7 +5,8 @@
 Imitación de la web de [Lemonade-API](https://www.lemonade.com/api) como práctica.
 
 ## Autor ✒️
-**Miriam Andrés** - *Documentación y trabajo inicial*
+**Miriam Andrés** - *Documentación y código*
+* [Website](https://miriamandres.com)
 * [Github](https://github.com/miriandres)
 * [LinkedIn](www.linkedin.com/in/miriamandresdev)
 
